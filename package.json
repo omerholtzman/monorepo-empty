@@ -1,0 +1,26 @@
+{
+  "name": "monorepo-empty",
+  "version": "1.0.0",
+  "description": "a test for monorepoing",
+  "main": "index.js",
+  "scripts": {
+    "build": "turbo run build",
+    "test": "turbo run test",
+    "dev": "turbo run dev",
+    "lint": "turbo run lint"
+  },
+  "author": "Holtz",
+  "license": "ISC",
+  "workspaces": [
+    "apps/*",
+    "packages/*"
+  ],
+  "devDependencies": {
+      "turbo": "^2.3.3"
+  },
+  "dependencies": {
+    "fastify": "^5.2.1"
+  },
+  "private": true,
+  "packageManager": "npm@10.8.2"
+}

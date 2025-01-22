@@ -1,0 +1,21 @@
+{
+    "name": "@9920/schemas",
+    "type": "module",
+    "scripts": {
+        "dev": "tsc --watch",
+        "build": "tsc"
+    },
+    "exports": {
+        "./orders": {
+            "types": "./src/orders.ts",
+            "default": "./dist/orders.js"
+        }
+    },
+    "dependencies": {
+        "zod": "^3.24.1"
+    },
+    "devDependencies": {
+        "@9920/typescript-config": "*",
+        "typescript": "^5.7.3"
+    }
+}

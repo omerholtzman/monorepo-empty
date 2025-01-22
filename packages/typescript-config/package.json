@@ -1,0 +1,6 @@
+{
+    "name": "@9920/typescript-config",
+    "dependencies": {
+        "typescript": "^5.7.3"
+    }
+}
