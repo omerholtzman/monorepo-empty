@@ -18,9 +18,6 @@
   "devDependencies": {
       "turbo": "^2.3.3"
   },
-  "dependencies": {
-    "fastify": "^5.2.1"
-  },
   "private": true,
   "packageManager": "npm@10.8.2"
 }
