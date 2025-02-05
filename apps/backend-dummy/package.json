@@ -4,10 +4,12 @@
     "description": "a test for monorepoing",
     "main": "index.js",
     "scripts": {
-        "test": "vitest"
+        "test": "vitest",
+        "build": "tsc"
     },
     "author": "Holtz",
     "license": "ISC",
+    "type": "module",
     "devDependencies": {
         "@types/node": "^22.10.7",
         "turbo": "^2.3.3",
@@ -15,7 +17,9 @@
         "vitest": "^3.0.3"
     },
     "dependencies": {
+        "@9920/typescript-config": "*",
         "@9920/schemas": "*",
+        "dotenv": "^16.4.7",
         "fastify": "^5.2.1",
         "zod": "^3.24.1"
     }
