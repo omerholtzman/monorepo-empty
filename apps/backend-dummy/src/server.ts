@@ -9,7 +9,7 @@ server.get('/health', async (request, reply) => {
 
 server.post('/order', async (request, reply) => {
     const order = orderSchema.parse(request.body);
-    return { status: 'ok' }
+    return reply.send(order);
 })
 
 export default server;

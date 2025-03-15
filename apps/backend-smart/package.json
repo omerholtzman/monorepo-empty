@@ -4,7 +4,8 @@
     "description": "a test for monorepoing",
     "main": "index.js",
     "scripts": {
-        "test": "vitest --run"
+        "test": "vitest --run",
+        "build": "tsc"
     },
     "author": "Holtz",
     "license": "ISC",
