@@ -24,11 +24,13 @@ const startApplication = async () => {
 const handleShutdown = () => {
   process.on('SIGINT', async () => {
     console.log('SIGINT received. Shutting down gracefully...');
+    await server.close();
     process.exit(0);
   });
-
+  
   process.on('SIGTERM', async () => {
     console.log('SIGTERM received. Shutting down gracefully...');
+    await server.close();
     process.exit(0);
   });
 };

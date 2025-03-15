@@ -12,4 +12,8 @@ server.post('/order', async (request, reply) => {
     return reply.send(order);
 })
 
+server.addHook('onError', (request, reply, error) => {
+  console.error('Fastify encountered an error:', error);
+});
+
 export default server;
